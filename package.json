@@ -7,14 +7,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.58",
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
+    "@vitejs/plugin-react": "^4.1.0",
     "react": "^18.2.0",
     "react-build-dist": "^0.0.8",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
+    "vite": "^4.4.11",
     "web-vitals": "^2.1.4"
   },
   "repository": {
@@ -24,12 +25,12 @@
   "files": [
     "/dist"
   ],
-  "main": "./dist/static/js/main.dc20df3c.js",
-  "module": "typescript-common-component",
+  "main": "./dist/typescript-common-component.umd",
+  "module": "./dist/typescript-common-component.es",
   "exports": {
     ".": {
-      "import": "./dist/static/js/main.dc20df3c.js",
-      "require": "./dist/static/js/main.dc20df3c.js"
+      "import": "./dist/typescript-common-component.es",
+      "require": "./dist/typescript-common-component.umd"
     }
   },
   "scripts": {
@@ -55,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6"
   }
 }
